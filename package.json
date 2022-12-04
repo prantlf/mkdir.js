@@ -1,0 +1,66 @@
+{
+  "name": "@unixcompat/mkdir.js",
+  "description": "Creates directories like the \"mkdir\" command.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/prantlf/mkdir.js#readme",
+  "author": {
+    "name": "Ferdinand Prantl",
+    "email": "prantlf@gmail.com",
+    "url": "http://prantl.tk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prantlf/mkdir.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prantlf/mkdir.js/issues"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/prantlf/mkdir.js/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">=14.8"
+  },
+  "bin": {
+    "mkdir.js": "bin/mkdir.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "lint": "denolint",
+    "check": "test/run",
+    "test": "denolint && test/run"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/github",
+        {
+          "failComment": false
+        }
+      ],
+      "@semantic-release/git"
+    ]
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/git": "10.0.1",
+    "denolint": "2.0.5"
+  },
+  "keywords": [
+    "fs",
+    "file-system",
+    "directory",
+    "mkdir",
+    "md"
+  ]
+}
