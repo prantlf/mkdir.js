@@ -3,7 +3,7 @@
 [![Latest version](https://img.shields.io/npm/v/@unixcompat/mkdir.js)
  ![Dependency status](https://img.shields.io/librariesio/release/npm/@unixcompat/mkdir.js)
 ](https://www.npmjs.com/package/@unixcompat/mkdir.js)
-[![Coverage](https://codecov.io/gh/prantlf/mkdir/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/mkdir)
+[![Coverage](https://codecov.io/gh/prantlf/mkdir.js/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/mkdir.js)
 
 Creates directories, if they do not already exist, like the `mkdir` command.
 
