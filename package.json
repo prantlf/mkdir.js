@@ -1,7 +1,7 @@
 {
   "name": "@unixcompat/mkdir.js",
   "description": "Creates directories, if they do not already exist, like the \"mkdir\" command.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/prantlf/mkdir.js#readme",
   "author": {
     "name": "Ferdinand Prantl",
