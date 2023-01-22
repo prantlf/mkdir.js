@@ -13,6 +13,14 @@ echo "mkdir -V"
 ../bin/mkdir.js -V
 if [ "$?" != "0" ]; then exit 1; fi
 
+echo "mkdir -z"
+../bin/mkdir.js -z
+if [ "$?" != "1" ]; then exit 1; fi
+
+echo "mkdir"
+../bin/mkdir.js
+if [ "$?" != "1" ]; then exit 1; fi
+
 rm -rf out
 mkdir out
 
@@ -35,8 +43,32 @@ echo "mkdir out/a"
 ../bin/mkdir.js out/a
 if [ "$?" != "1" ]; then exit 1; fi
 
-echo "mkdir -p out/a"
-../bin/mkdir.js -p out/a
+echo "mkdir -pv out/a"
+../bin/mkdir.js -pv out/a
 if [ "$?" != "0" ]; then exit 1; fi
+
+echo "mkdir -m u=rw out/c"
+../bin/mkdir.js -m u=rw out/c
+if [ "$?" != "0" ]; then exit 1; fi
+echo "checking read permissions"
+if [ ! -r out/c ]; then exit 1; fi
+echo "checking write permissions"
+if [ ! -w out/c ]; then exit 1; fi
+echo "checking execute permissions"
+if [ -x out/c ]; then exit 1; fi
+
+echo "mkdir --mode=600 out/d"
+../bin/mkdir.js --mode=600 out/d
+if [ "$?" != "0" ]; then exit 1; fi
+echo "checking read permissions"
+if [ ! -r out/d ]; then exit 1; fi
+echo "checking write permissions"
+if [ ! -w out/d ]; then exit 1; fi
+echo "checking execute permissions"
+if [ -x out/d ]; then exit 1; fi
+
+echo "mkdir -m=z out/e"
+../bin/mkdir.js -m=z out/e
+if [ "$?" != "1" ]; then exit 1; fi
 
 echo "done"

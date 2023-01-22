@@ -1,6 +1,6 @@
 {
   "name": "@unixcompat/mkdir.js",
-  "description": "Creates directories like the \"mkdir\" command.",
+  "description": "Creates directories, if they do not already exist, like the \"mkdir\" command.",
   "version": "1.0.0",
   "homepage": "https://github.com/prantlf/mkdir.js#readme",
   "author": {
@@ -23,8 +23,9 @@
     }
   ],
   "engines": {
-    "node": ">=14.8"
+    "node": ">=14.18"
   },
+  "type": "module",
   "bin": {
     "mkdir.js": "bin/mkdir.js"
   },
@@ -34,7 +35,18 @@
   "scripts": {
     "lint": "denolint",
     "check": "test/run",
-    "test": "denolint && test/run"
+    "test": "denolint && c8 test/run"
+  },
+  "c8": {
+    "check-coverage": true,
+    "reporter": [
+      "text",
+      "lcov"
+    ],
+    "branches": 100,
+    "lines": 100,
+    "functions": 100,
+    "statements": 100
   },
   "release": {
     "plugins": [
@@ -51,9 +63,13 @@
       "@semantic-release/git"
     ]
   },
+  "dependencies": {
+    "unix-permissions": "4.8.0"
+  },
   "devDependencies": {
-    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/changelog": "6.0.2",
     "@semantic-release/git": "10.0.1",
+    "c8": "7.12.0",
     "denolint": "2.0.5"
   },
   "keywords": [

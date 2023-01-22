@@ -3,16 +3,17 @@
 [![Latest version](https://img.shields.io/npm/v/@unixcompat/mkdir.js)
  ![Dependency status](https://img.shields.io/librariesio/release/npm/@unixcompat/mkdir.js)
 ](https://www.npmjs.com/package/@unixcompat/mkdir.js)
+[![Coverage](https://codecov.io/gh/prantlf/mkdir/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/mkdir)
 
-Creates directories like the `mkdir` command.
+Creates directories, if they do not already exist, like the `mkdir` command.
 
 There are multi-platform file-system commands compatible with `mkdir` from UN*X implemented for Node.js in JavaScript, like [mkdirp] or [make-dir-cli], but they have a different interface and a different behaviour than the `mkdir` command. Instead of reusing the knowledge of the `mkdir` command, you would have to learn their new interface. This project aims to provide the well-known interface of the `mkdir` command.
 
-See also other commands compatible with their counterparts from UN*X - [cp.js] and [rm.js].
+See also other commands compatible with their counterparts from UN*X - [cat.js], [cp.js] and [rm.js].
 
 ## Installation
 
-This module can be installed in your project using [NPM], [PNPM] or [Yarn]. Make sure, that you use [Node.js] version 14.8 or newer.
+This module can be installed in your project using [NPM], [PNPM] or [Yarn]. Make sure, that you use [Node.js] version 14.18 or newer.
 
 ```sh
 $ npm i -D @unixcompat/mkdir.js
@@ -22,15 +23,19 @@ $ yarn add -D @unixcompat/mkdir.js
 
 ## Command-line Interface
 
-    Usage: mkdir.js [-Dpv] [--] dir...
+See also [`man mkdir`] for the original documentation.
+
+    Usage: mkdir.js [-Dmpv] [--] dir...
 
     Options:
-      -D|--dry-run  only print path of each directory
-      -p|--parents  create all directories leading up to the given directory
-                    that do not exist already
-      -v|--verbose  print path of each created directory
-      -V|--version  print version number
-      -h|--help     print usage instructions
+      -D|--dry-run      only print path of each directory
+      -m|--mode=<mode>  set file permission bits of the final created directory
+                        as chmod, absolute (octal like 755) or symbolic (a=rwx)
+      -p|--parents      create all directories leading up to the given directory
+                        that do not exist already, no error if existing
+      -v|--verbose      print path of each created directory
+      -V|--version      print version number
+      -h|--help         print usage instructions
 
     Examples:
       $ mkdir.js d
@@ -52,5 +57,7 @@ Licensed under the MIT license.
 [Yarn]: https://yarnpkg.com/
 [mkdirp]: https://www.npmjs.com/package/mkdirp
 [make-dir-cli]: https://www.npmjs.com/package/make-dir-cli
+[cat.js]: https://www.npmjs.com/package/@unixcompat/cat.js
 [cp.js]: https://www.npmjs.com/package/@unixcompat/cp.js
 [rm.js]: https://www.npmjs.com/package/@unixcompat/rm.js
+[`man mkdir`]: https://man7.org/linux/man-pages/man1/mkdir.1.html

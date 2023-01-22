@@ -2,6 +2,7 @@
 {
   "files.exclude": {
     ".git": true,
+    "coverage": true,
     "node_modules": true,
     "pnpm-lock.yaml": true,
     ".DS_Store": true
