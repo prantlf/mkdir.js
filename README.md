@@ -11,6 +11,24 @@ There are multi-platform file-system commands compatible with `mkdir` from UN*X 
 
 See also other commands compatible with their counterparts from UN*X - [cat.js], [cp.js] and [rm.js].
 
+## Synopsis
+
+The following scripts from `package.json` won't work on Windows:
+
+    rm -rf dist
+    mkdir -p dist
+    cat src/umd-prolog.txt src/code.js src/umd-epilog.txt > dist/index.umd.js
+    cp src/index.d.ts dist
+
+Replace them with the following ones, which run on any operating system which is supported by Node.js:
+
+    rm.js -rf dist
+    mkdir.js -p dist
+    cat.js src/umd-prolog.txt src/code.js src/umd-epilog.txt > dist/index.umd.js
+    cp.js src/index.d.ts dist
+
+Notice that the only difference is the suffix `.js` behind the command names.
+
 ## Installation
 
 This module can be installed in your project using [NPM], [PNPM] or [Yarn]. Make sure, that you use [Node.js] version 14.18 or newer.
