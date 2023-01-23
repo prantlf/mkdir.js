@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/prantlf/mkdir.js/compare/v1.1.0...v1.1.1) (2023-01-23)
+
+
+### Bug Fixes
+
+* Replace unix-permissions with unix-permissions-lib ([f93fd3f](https://github.com/prantlf/mkdir.js/commit/f93fd3ffe93564fe25ed2f4fb42ea67d5e84b748))
+
 # [1.1.0](https://github.com/prantlf/mkdir.js/compare/v1.0.0...v1.1.0) (2023-01-22)
 
 
