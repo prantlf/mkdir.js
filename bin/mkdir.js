@@ -2,7 +2,7 @@
 
 import { readFileSync } from 'fs'
 import { mkdir } from 'fs/promises'
-import { convert } from 'unix-permissions'
+import { convert } from 'unix-permissions-lib'
 import { fileURLToPath } from 'url'
 import { dirname, join } from 'path'
 

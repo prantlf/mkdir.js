@@ -64,7 +64,7 @@
     ]
   },
   "dependencies": {
-    "unix-permissions": "4.8.0"
+    "unix-permissions-lib": "5.0.1"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.2",
