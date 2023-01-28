@@ -4,7 +4,7 @@ specifiers:
   '@semantic-release/changelog': 6.0.2
   '@semantic-release/git': 10.0.1
   c8: 7.12.0
-  denolint: 2.0.5
+  denolint: 2.0.6
   unix-permissions-lib: 5.0.1
 
 dependencies:
@@ -14,7 +14,7 @@ devDependencies:
   '@semantic-release/changelog': 6.0.2
   '@semantic-release/git': 10.0.1
   c8: 7.12.0
-  denolint: 2.0.5
+  denolint: 2.0.6
 
 packages:
 
@@ -22,8 +22,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@denolint/denolint-darwin-arm64/2.0.5:
-    resolution: {integrity: sha512-eqNVp4yMdUPBO1CWRnkbnY7EfBeBjxW3YDnLq/KJkZWQSr5mV/Ls2RZQ5N56OMpHczbJJDZq4/wx9KcGMuXZpQ==}
+  /@denolint/denolint-darwin-arm64/2.0.6:
+    resolution: {integrity: sha512-1udIY4Ihm6ZFVMxMquTImHJSBkFK1tY7GW1rnbCtt9EK7Qn+hmOr44B6MTmY72ZJvm8uo/d/w582UaCRU15w4Q==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [darwin]
@@ -31,8 +31,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-darwin-x64/2.0.5:
-    resolution: {integrity: sha512-8l7zQiFhghA4vVE62CDTzXmzzTu4hYXp9NEJXSAE2ACx6EX0jJi9q1/goIR/KMuf2xAYbDkSTouElimsZAYLVw==}
+  /@denolint/denolint-darwin-x64/2.0.6:
+    resolution: {integrity: sha512-/nDavv7+di9RGXB6Q3sL1bbm2K6AxXr2SJ1RpRIzPdTpzlnL3g+0bIJzGMmY8xg4xPaN/Pb2eC/atPAs5XANvw==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [darwin]
@@ -40,8 +40,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-freebsd-x64/2.0.5:
-    resolution: {integrity: sha512-8oOOsd2SFHvwHEfAcaUzLOIH6p9++X/Om5xkNiJUvgB+lYkR71yeHsIKbwH7TuFEVmXwoZz4dnjqzQPLJ7KPRA==}
+  /@denolint/denolint-freebsd-x64/2.0.6:
+    resolution: {integrity: sha512-CZPaYuIDb8aX+6ZGLHT1mLOF0CV4lvFTL92UmfTkuvBP334MKnVA50XMCVg9VRjDIz9Q+FcTeuS9rUo+YZwI5Q==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [freebsd]
@@ -49,8 +49,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-linux-arm-gnueabihf/2.0.5:
-    resolution: {integrity: sha512-bBM9s30yNMhMjwOqar1752Sg1iRpmTTS5P8ddAa4gjlz72Ff99PwObIW20tAqrJ3zo9LK8Z86yZ9VIcePs6JNQ==}
+  /@denolint/denolint-linux-arm-gnueabihf/2.0.6:
+    resolution: {integrity: sha512-QI2hOfNF81epQZJSnHsd79R04bAHBXbysQ5wpjfn2vEYTODCinTHwAZ4AcQaYdHorgD6nEA5YOlkV5XUxU3wGQ==}
     engines: {node: '>= 12'}
     cpu: [arm]
     os: [linux]
@@ -58,8 +58,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-linux-arm64-gnu/2.0.5:
-    resolution: {integrity: sha512-z6bzbs2ogFs9+ydbGaXjnOK8vy+UP3MPjh5byTY3txrm9K1OY6Apdqyd2L/dG7u6cwzoowDevHjrgO+A/vQOFA==}
+  /@denolint/denolint-linux-arm64-gnu/2.0.6:
+    resolution: {integrity: sha512-DH0+5GzQukocGbAbcuIPqkD3IEmCzyb6hvkhC54kq1Dy9j9nhm8B+MTS2E7M3LDe1dWodlzSE5bM1gYeXGNPog==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [linux]
@@ -67,8 +67,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-linux-x64-gnu/2.0.5:
-    resolution: {integrity: sha512-QYfL+ss0hbBXOkXuZro24+om0aPZo0DFS6OilNdExB3WZbTrfsfbkgw71cH+9btoo07fvl/+cpKmT3gIC9xA1Q==}
+  /@denolint/denolint-linux-x64-gnu/2.0.6:
+    resolution: {integrity: sha512-JZpfP5tSzHPholyMkqGuRiOwVXWL2+bxnYRyJzMwZWHjjqZofZRsSn9oUgoSaZl/hlGii9Du3LxU3VOh7QC3Xg==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [linux]
@@ -76,8 +76,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-linux-x64-musl/2.0.5:
-    resolution: {integrity: sha512-ZANjYnUXycyzPKdieYhSOBP+rYknBR4RULRSJdMWGfMHDhiQsNEE0GpiPdR28SQPDVJfbNjk2saqblc0BFPvrQ==}
+  /@denolint/denolint-linux-x64-musl/2.0.6:
+    resolution: {integrity: sha512-aHeFyRTHmR1ARMH8fDy9t7VwYna1tYomfyrR7Aocp4WFYgo+7UO+Wpuj12hqEqGH2A01MCCs+pWkCNOmPq/T0A==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [linux]
@@ -85,8 +85,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-win32-arm64-msvc/2.0.5:
-    resolution: {integrity: sha512-A7nk9RgJRqzqyD0cX+n+dvDKEYi//bx30pLhUsNmDcGueJQiOGJSRa7Bt3KVLRJRh+NAXRiiubgDBLplTi28jw==}
+  /@denolint/denolint-win32-arm64-msvc/2.0.6:
+    resolution: {integrity: sha512-yugP9zxTXeVp7K9QnLdDTgDdp6erV7X9BffC+Gqwcrh0RTH7t6zOTDprZ4tXZYvXCMWQDObow6twNat0JDy7+A==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [win32]
@@ -94,8 +94,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-win32-ia32-msvc/2.0.5:
-    resolution: {integrity: sha512-VHi2w7HerJP3OSaCoLuBs4+uTDN8W0Jj8c463V919kAxtnsuIcJaRstHn3uqJw9zzkDaHpjWYkLD6DwPCUgxpQ==}
+  /@denolint/denolint-win32-ia32-msvc/2.0.6:
+    resolution: {integrity: sha512-A+VN5UqcbkaNctFB0+gOeLFEFTrGs5GW2c0iBvfvgVjcLYjOuFmhHd4QMloYrcYQOAgrM8XpXyOo6iZsF/YMJw==}
     engines: {node: '>= 12'}
     cpu: [ia32]
     os: [win32]
@@ -103,8 +103,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-win32-x64-msvc/2.0.5:
-    resolution: {integrity: sha512-X+1/pKTWp7gcg5bzuOBe6QfE73lO4Ro+bG28N/qYMlJMC0z+a4acG+FK43O+Z9JZGyISwz1rCkAYXTYoOHuW7A==}
+  /@denolint/denolint-win32-x64-msvc/2.0.6:
+    resolution: {integrity: sha512-l+7xpeItsG/g9W9H6JfXcV6IOMcFRHo2u2F2GjW4Xa8tu7oz0gZlAgtjl2VEvkZ41mko/jL7jERgAlxTJDvsog==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [win32]
@@ -282,21 +282,21 @@ packages:
       ms: 2.1.2
     dev: true
 
-  /denolint/2.0.5:
-    resolution: {integrity: sha512-ym+6akCw9NQuoaCTJf00D85Al4WG+NBcGmqKeDV+c9fCReM58kPvaT1VOZZXgPYzZTkgnDL3MJsZk+oPDYydOQ==}
+  /denolint/2.0.6:
+    resolution: {integrity: sha512-fz225hv8DzqGUESNrMSzY8tE3vf96tzdzXwLbr8C7MkGGzmjroT5Zxjf/k8JUWMRSMR7bbfn8jJBPO+jOZ+9ag==}
     engines: {node: '>= 12'}
     requiresBuild: true
     optionalDependencies:
-      '@denolint/denolint-darwin-arm64': 2.0.5
-      '@denolint/denolint-darwin-x64': 2.0.5
-      '@denolint/denolint-freebsd-x64': 2.0.5
-      '@denolint/denolint-linux-arm-gnueabihf': 2.0.5
-      '@denolint/denolint-linux-arm64-gnu': 2.0.5
-      '@denolint/denolint-linux-x64-gnu': 2.0.5
-      '@denolint/denolint-linux-x64-musl': 2.0.5
-      '@denolint/denolint-win32-arm64-msvc': 2.0.5
-      '@denolint/denolint-win32-ia32-msvc': 2.0.5
-      '@denolint/denolint-win32-x64-msvc': 2.0.5
+      '@denolint/denolint-darwin-arm64': 2.0.6
+      '@denolint/denolint-darwin-x64': 2.0.6
+      '@denolint/denolint-freebsd-x64': 2.0.6
+      '@denolint/denolint-linux-arm-gnueabihf': 2.0.6
+      '@denolint/denolint-linux-arm64-gnu': 2.0.6
+      '@denolint/denolint-linux-x64-gnu': 2.0.6
+      '@denolint/denolint-linux-x64-musl': 2.0.6
+      '@denolint/denolint-win32-arm64-msvc': 2.0.6
+      '@denolint/denolint-win32-ia32-msvc': 2.0.6
+      '@denolint/denolint-win32-x64-msvc': 2.0.6
     dev: true
 
   /dir-glob/3.0.1:
