@@ -61,6 +61,10 @@ See also `man mkdir` for the original [POSIX documentation] or for the extended 
 
 ## Differences
 
+The following options are specific to this command:
+
+    -D|--dry-run    only print path of each file or directory
+
 The following options from the Linux version are not supported:
 
     -Z               set SELinux security context of each created directory
