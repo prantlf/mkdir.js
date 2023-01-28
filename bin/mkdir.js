@@ -91,7 +91,10 @@ for (let i = 2, l = argv.length; i < l; ++i) {
   args.push(arg)
 }
 
-if (!args.length) fail('missing directories to create')
+if (!args.length) {
+  help()
+  process.exit(1)
+}
 
 try {
   for (const arg of args) {

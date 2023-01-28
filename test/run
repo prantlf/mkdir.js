@@ -27,16 +27,19 @@ mkdir out
 echo "mkdir -D out/a"
 ../bin/mkdir.js -D out/a
 if [ "$?" != "0" ]; then exit 1; fi
+echo "checking out/a"
 if [ -d "out/a" ]; then exit 1; fi
 
 echo "mkdir out/a"
 ../bin/mkdir.js out/a
 if [ "$?" != "0" ]; then exit 1; fi
+echo "checking out/a"
 if [ ! -d "out/a" ]; then exit 1; fi
 
 echo "mkdir -- out/b"
 ../bin/mkdir.js -- out/b
 if [ "$?" != "0" ]; then exit 1; fi
+echo "checking out/b"
 if [ ! -d "out/b" ]; then exit 1; fi
 
 echo "mkdir out/a"

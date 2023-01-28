@@ -9,7 +9,7 @@ Creates directories, if they do not already exist, like the `mkdir` command.
 
 There are multi-platform file-system commands compatible with `mkdir` from UN*X implemented for Node.js in JavaScript, like [mkdirp] or [make-dir-cli], but they have a different interface and a different behaviour than the `mkdir` command. Instead of reusing the knowledge of the `mkdir` command, you would have to learn their new interface. This project aims to provide the well-known interface of the `mkdir` command.
 
-See also other commands compatible with their counterparts from UN*X - [cat.js], [cp.js] and [rm.js].
+This package offers only command-line interface, because programmatic interface is provided by [`mkdir`] from [node:fs]. See also other commands compatible with their counterparts from UN*X - [cat.js], [cp.js] and [rm.js].
 
 ## Synopsis
 
@@ -41,7 +41,7 @@ $ yarn add -D @unixcompat/mkdir.js
 
 ## Command-line Interface
 
-See also [`man mkdir`] for the original documentation.
+See also `man mkdir` for the original [POSIX documentation] or for the extended [Linux implementation].
 
     Usage: mkdir.js [-Dmpv] [--] dir...
 
@@ -58,6 +58,15 @@ See also [`man mkdir`] for the original documentation.
     Examples:
       $ mkdir.js d
       $ mkdir.js -p /tmp/a/b/c
+
+## Differences
+
+The following options from the Linux version are not supported:
+
+    -Z               set SELinux security context of each created directory
+                     to the default type
+    --context[=CTX]  like -Z, or if CTX is specified then set the SELinux
+                     or SMACK security context to CTX
 
 ## Contributing
 
@@ -78,4 +87,7 @@ Licensed under the MIT license.
 [cat.js]: https://www.npmjs.com/package/@unixcompat/cat.js
 [cp.js]: https://www.npmjs.com/package/@unixcompat/cp.js
 [rm.js]: https://www.npmjs.com/package/@unixcompat/rm.js
-[`man mkdir`]: https://man7.org/linux/man-pages/man1/mkdir.1.html
+[POSIX documentation]: https://man7.org/linux/man-pages/man1/mkdir.1p.html
+[Linux implementation]: https://man7.org/linux/man-pages/man1/mkdir.1.html
+[`mkdir`]: https://nodejs.org/api/fs.html#fsmkdirpath-options-callback
+[node:fs]: https://nodejs.org/api/fs.html
