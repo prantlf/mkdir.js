@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/prantlf/mkdir.js/compare/v1.1.1...v1.1.2) (2023-01-29)
+
+
+### Bug Fixes
+
+* Print help if run without arguments ([3700b9f](https://github.com/prantlf/mkdir.js/commit/3700b9fa8d8034b6c162c3a34047eefa2f626986))
+
 ## [1.1.1](https://github.com/prantlf/mkdir.js/compare/v1.1.0...v1.1.1) (2023-01-23)
 
 
