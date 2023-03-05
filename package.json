@@ -27,7 +27,7 @@
   },
   "type": "module",
   "bin": {
-    "mkdir.js": "bin/mkdir.js"
+    "mkdir.js": "bin/mkdir.mjs"
   },
   "files": [
     "bin"
