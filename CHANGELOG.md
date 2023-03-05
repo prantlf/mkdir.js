@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/prantlf/mkdir.js/compare/v1.1.2...v1.1.3) (2023-03-05)
+
+
+### Bug Fixes
+
+* Use .mjs extension to enforce the module type ([93886ce](https://github.com/prantlf/mkdir.js/commit/93886ce1ddeaacf87125e3c37035700c664a9b97))
+
 ## [1.1.2](https://github.com/prantlf/mkdir.js/compare/v1.1.1...v1.1.2) (2023-01-29)
 
 
