@@ -14,7 +14,7 @@ function getPackage() {
 function help() {
   console.log(`${getPackage().description}
 
-Usage: mkdir.js [-Dmpv] [--] dir...
+Usage: mkdir-j [-Dmpv] [--] dir...
 
 Options:
   -D|--dry-run      only print path of each directory
@@ -27,8 +27,8 @@ Options:
   -h|--help         print usage instructions
 
 Examples:
-  $ mkdir.js d
-  $ mkdir.js -p /tmp/a/b/c`)
+  $ mkdir-j d
+  $ mkdir-j -p /tmp/a/b/c`)
 }
 
 const { argv } = process

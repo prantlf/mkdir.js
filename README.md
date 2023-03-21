@@ -20,14 +20,16 @@ The following scripts from `package.json` won't work on Windows:
     cat src/umd-prolog.txt src/code.js src/umd-epilog.txt > dist/index.umd.js
     cp src/index.d.ts dist
     mv LICENSE doc
+    ln -s ../src src
 
 Replace them with the following ones, which run on any operating system which is supported by Node.js:
 
-    rm.js -rf dist
-    mkdir.js -p dist
-    cat.js src/umd-prolog.txt src/code.js src/umd-epilog.txt > dist/index.umd.js
-    cp.js src/index.d.ts dist
-    mv.js LICENSE doc
+    rm-j -rf dist
+    mkdir-j -p dist
+    cat-j src/umd-prolog.txt src/code.js src/umd-epilog.txt > dist/index.umd.js
+    cp-j src/index.d.ts dist
+    mv-j LICENSE doc
+    ln-j -s ../src src
 
 Notice that the only difference is the suffix `.js` behind the command names.
 
@@ -45,7 +47,7 @@ $ yarn add -D @unixcompat/mkdir.js
 
 See also `man mkdir` for the original [POSIX documentation] or for the extended [Linux implementation].
 
-    Usage: mkdir.js [-Dmpv] [--] dir...
+    Usage: mkdir-j [-Dmpv] [--] dir...
 
     Options:
       -D|--dry-run      only print path of each directory
@@ -58,8 +60,8 @@ See also `man mkdir` for the original [POSIX documentation] or for the extended 
       -h|--help         print usage instructions
 
     Examples:
-      $ mkdir.js d
-      $ mkdir.js -p /tmp/a/b/c
+      $ mkdir-j d
+      $ mkdir-j -p /tmp/a/b/c
 
 ## Differences
 
