@@ -1,3 +1,17 @@
+# [2.0.0](https://github.com/prantlf/mkdir.js/compare/v1.1.3...v2.0.0) (2023-03-21)
+
+
+### Bug Fixes
+
+* Rename the bin script to mkdir-j ([324507a](https://github.com/prantlf/mkdir.js/commit/324507ab38720e5f7fc3e758be1d34eeab4e450a))
+
+
+### BREAKING CHANGES
+
+* The name of the executable changed from "mkdir.js" to "mkdir-j". I'm sorry
+for that, but Windows mistake the suffix ".js" to a file extension and try execute it.
+NPM creates the original file name too, probably to support Cygwin.
+
 ## [1.1.3](https://github.com/prantlf/mkdir.js/compare/v1.1.2...v1.1.3) (2023-03-05)
 
 
