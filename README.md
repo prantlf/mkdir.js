@@ -9,7 +9,7 @@ Creates directories, if they do not already exist, like the `mkdir` command.
 
 There are multi-platform file-system commands compatible with `mkdir` from UN*X implemented for Node.js in JavaScript, like [mkdirp] or [make-dir-cli], but they have a different interface and a different behaviour than the `mkdir` command. Instead of reusing the knowledge of the `mkdir` command, you would have to learn their new interface. This project aims to provide the well-known interface of the `mkdir` command.
 
-This package offers only command-line interface, because programmatic interface is provided by [`mkdir`] from [node:fs]. See also other commands compatible with their counterparts from UN*X - [cat.js], [cp.js], [mv.js] and [rm.js].
+This package offers only command-line interface, because programmatic interface is provided by [`mkdir`] from [node:fs]. See also other commands compatible with their counterparts from UN*X - [cat.js], [cp.js], [ln.js], [mv.js] and [rm.js].
 
 ## Synopsis
 
@@ -92,6 +92,7 @@ Licensed under the MIT license.
 [make-dir-cli]: https://www.npmjs.com/package/make-dir-cli
 [cat.js]: https://www.npmjs.com/package/@unixcompat/cat.js
 [cp.js]: https://www.npmjs.com/package/@unixcompat/cp.js
+[ln.js]: https://www.npmjs.com/package/@unixcompat/ln.js
 [mv.js]: https://www.npmjs.com/package/@unixcompat/mv.js
 [rm.js]: https://www.npmjs.com/package/@unixcompat/rm.js
 [POSIX documentation]: https://man7.org/linux/man-pages/man1/mkdir.1p.html
